@@ -1,0 +1,145 @@
+/* styles.css */
+/* Hilangkan padding dan margin dari seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(74, 121, 142, 1);
+    margin: 0; /* Pastikan tidak ada margin di atas atau di sekitar body */
+}
+
+.halaman {
+    padding: 0; /* Pastikan tidak ada padding di bagian atas halaman */
+    min-height: 100vh; /* Pastikan halaman mencakup tinggi minimum 100% viewport */
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.back-arrow:hover {
+    color: #ffcc00;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+#pariwisata .judul {
+    font-size: 20px;
+}
+/* Container for the image scroll */
+.image-scroll-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 80%; /* Adjust this as per your layout */
+    overflow: hidden; /* Hide the overflow content */
+    margin-top: 20px;
+}
+
+/* Gallery of images */
+.image-gallery {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    scroll-behavior: smooth; /* Smooth scrolling */
+    scrollbar-width: none; /* Hide scrollbar for Firefox */
+}
+
+.image-gallery::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for Chrome, Safari and Edge */
+}
+
+/* Individual image styling */
+.image-gallery img {
+    width: 500px; /* Adjust image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 10px; /* Add space between images */
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Buttons for scrolling */
+.scroll-btn {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 20px;
+}
+
+.left-btn {
+    left: 0;
+}
+
+.right-btn {
+    right: 0;
+}
+
+/* Button hover effects */
+.scroll-btn:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.konten{
+    text-align: justify;
+    padding: 30px 40px 20px 40px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+/* Grid untuk card */
+
+
+
+.judul {
+    position: relative;
+    width: 100vw; /* Memastikan elemen memenuhi lebar penuh jendela */
+    height: 180px; /* Sesuaikan tinggi latar belakang */
+    background-image: url('background.jpeg'); /* Ganti dengan path gambar */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; /* Agar judul dan teks vertikal */
+    color: white;
+    padding-left: 50px; /* Menyisakan ruang untuk panah */
+    padding-right: 50px;
+    margin: 0; /* Hilangkan margin tambahan jika ada */
+    top: 0; /* Pastikan dimulai dari bagian atas */
+}
+
+/* Teks h2 (Judul) */
+.judul h2 {
+    font-size: 36px;
+    margin-bottom: 10px; /* Jarak antara judul dan paragraf */
+}
+
+/* Paragraf di bawah judul */
+.judul p {
+    font-size: 16px;
+    text-align: center; /* Teks di tengah */
+    max-width: 800px; /* Batas lebar paragraf agar tidak terlalu panjang */
+}
+
+

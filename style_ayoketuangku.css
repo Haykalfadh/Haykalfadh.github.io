@@ -1,0 +1,101 @@
+/* styles.css */
+/* Hilangkan padding dan margin dari seluruh elemen */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgba(74, 121, 142, 1);
+    margin: 0;
+}
+
+/* Halaman penuh dengan layout fleksibel */
+.halaman {
+    padding: 0;
+    min-height: 100vh;
+    text-align: center;
+    color: white;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.back-arrow {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.back-arrow:hover {
+    color: #ffcc00;
+    cursor: pointer;
+    transform: scale(1.2);
+}
+
+/* Styling untuk konten */
+.konten {
+    text-align: justify;
+    padding: 30px 40px 20px 40px;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.gambar {
+    display: flex;
+    justify-content: center; /* Menengahkan secara horizontal */
+    align-items: center; /* Menengahkan secara vertikal */
+    width: 80%; /* Kontainer dengan lebar 80% dari elemen induk */
+    max-width: 600px; /* Maksimum lebar kontainer */
+    height: auto; /* Tinggi otomatis agar sesuai dengan konten */
+    margin: 20px auto; /* Margin horizontal otomatis untuk menengahkannya */
+    overflow: hidden; /* Menyembunyikan bagian gambar yang keluar dari kontainer */
+}
+
+.gambar img {
+    width: 100%; /* Gambar akan mengambil lebar kontainer */
+    height: auto; /* Pertahankan rasio gambar */
+}
+
+
+/* Styling untuk judul */
+.judul {
+    position: relative;
+    width: 100vw;
+    height: 180px;
+    background-image: url('background2.jpeg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: 0;
+    top: 0;
+}
+
+/* Teks h2 (Judul) */
+.judul h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+/* Paragraf di bawah judul */
+.judul p {
+    font-size: 16px;
+    text-align: center;
+    max-width: 800px;
+}
